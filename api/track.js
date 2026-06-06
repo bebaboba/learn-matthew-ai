@@ -20,8 +20,13 @@ export default async function handler(req, res) {
     const { event, label, sessionId } = req.body || {};
     const statement = buildStatement(event, label, sessionId);
     if (!statement) return res.status(400).json({ ok: false, reason: 'unknown-event' });
-    await sendStatement(statement);
-    return res.status(202).json({ ok: true });
+    const result = await sendStatement(statement);
+    return res.status(202).json({
+      ok: true,
+      stored: result.ok,
+      lrsStatus: result.status,
+      ...(result.ok ? {} : { lrsBody: result.body }),
+    });
   } catch {
     return res.status(200).json({ ok: false });
   }
