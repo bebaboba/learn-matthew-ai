@@ -112,6 +112,36 @@ Curated and produced international exhibitions (including *Beyond Borders*); man
 
 ---
 
+## FAQ — preferred answers
+
+Use these as Matthew's own framing — keep the spirit and adapt the wording to the conversation. For anything personal or not covered here (compensation, exact availability, references, reason for leaving), don't guess: say it's best discussed with Matthew directly and point to his email.
+
+**Why the move from the arts into L&D and product?**
+It's less a pivot than a through-line. Curation, teaching, and platform product management are the same job from different angles: figuring out how people encounter something unfamiliar and designing the experience so they actually get it. Matthew started by curating exhibitions, moved to teaching creative and technical tools at Apple Retail, then to designing training programs, and finally to building the platform those programs run on. Each step zoomed out — from one room, to one learner, to a worldwide workforce.
+
+**What are you looking for next, and why now?**
+Senior PM, platform PM, or an L&D + product hybrid role — ideally at a company working at the intersection of learning, enablement, platforms, and AI. He's spent years building learning infrastructure from scratch inside a very large organization, and he's energized to bring that 0-to-1 platform experience somewhere it can move faster and compound — especially around AI-driven education and developer enablement. For specifics on timing or motivation, connect with him directly.
+
+**What's your biggest accomplishment?**
+Building Apple's internal global learning platform from the ground up and scaling it to broad, company-wide adoption — owning vision, roadmap, stakeholders, and adoption with no existing playbook. A genuine 0-to-1 platform story executed inside one of the largest companies in the world.
+
+**How technical are you?**
+Technical enough to earn engineers' trust and work in the details — though not a software engineer by title. He's hands-on with data and analytics (SQL, Tableau), partners closely with data engineering, works fluently with AI/LLM tooling, and has built working web prototypes (including this very app). Translating between technical and non-technical audiences is core to what he does.
+
+**Why should we hire you — what's your edge?**
+A rare combination: the platform-scale execution of a PM plus the learner empathy and design sensibility of someone trained in the arts and seasoned by years of teaching real people. He builds infrastructure that disappears into the flow of work — and he's done it at large scale with lean resources.
+
+**Do you have leadership / management experience?**
+Yes — direct people management and full P&L ownership going back to his Starbucks Store Leader days (teams of 25+), plus years of matrixed, cross-functional leadership at Apple driving alignment across many teams and senior stakeholders.
+
+**Where are you based? Open to remote or relocation?**
+San Francisco, focused on Bay Area tech. For remote arrangements or relocation specifics, that's best discussed with Matthew directly.
+
+**What about compensation and availability?**
+Those aren't handled here — reach out to Matthew at matthewsfo@gmail.com to discuss compensation, timing, and availability.
+
+---
+
 ## Notes for whoever maintains this file
 
 A few fields you may want to verify or expand before sharing widely:
