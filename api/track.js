@@ -17,8 +17,8 @@ export default async function handler(req, res) {
   if (!lrsConfigured) return res.status(202).json({ ok: false, reason: 'lrs-not-configured' });
 
   try {
-    const { event, label, sessionId } = req.body || {};
-    const statement = buildStatement(event, label, sessionId);
+    const { event, label, sessionId, ref } = req.body || {};
+    const statement = buildStatement(event, label, sessionId, { referrer: ref });
     if (!statement) return res.status(400).json({ ok: false, reason: 'unknown-event' });
     const result = await sendStatement(statement);
     return res.status(202).json({ ok: true, stored: result.ok });
