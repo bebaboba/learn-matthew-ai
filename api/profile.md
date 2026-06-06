@@ -66,7 +66,7 @@ Lead customer educator and product expert at flagship Apple Retail locations, de
 **Starbucks — Store Leader & Market Training Lead** · Seattle · 2004–2009
 As Market Training Lead, designed and delivered multi-unit training programs across a regional portfolio — building curriculum, facilitating workshops, and measuring outcomes against operational KPIs. As Store Leader, owned full P&L and led a team of 25+ across customer-experience and productivity goals.
 
-**University Gallery — Gallery Coordinator** · 2002–2004
+**Viking Union Gallery, Western Washington University — Gallery Coordinator** · Bellingham, WA · 2002–2004
 Curated and produced international exhibitions (including *Beyond Borders*); managed stakeholder relationships, public programming, and digital content — an early foundation in audience-centered experience design.
 
 ---
@@ -93,7 +93,7 @@ Curated and produced international exhibitions (including *Beyond Borders*); man
 
 ## Education
 
-- **B.A., Integrated Social Sciences** — University of Washington. Art History minor; additional coursework in Communications, Computer Science, and Mixed Media Studio Arts.
+- **B.A., Integrated Social Sciences** — University of Washington (2017). Art History minor; additional coursework in Communications, Computer Science, and Mixed Media Studio Arts.
 - **Fine Art & Design studies** — Western Washington University (1999–2004; no degree earned).
 
 ---
@@ -115,7 +115,7 @@ Curated and produced international exhibitions (including *Beyond Borders*); man
 ## Notes for whoever maintains this file
 
 A few fields you may want to verify or expand before sharing widely:
-- **Dates/titles need confirmation.** Work history was compiled from Matthew's own resumes, which conflict in places: Apple tenure is framed as both ~13 years (Product Owner since 2012) and as Retail 2009–2019 then L&D 2019–present (the version used here); the UW graduation year appears as both 2002 and 2017 (omitted here); and the gallery role's institution is unconfirmed (UW vs. Western Washington / Viking Union Gallery). Confirm before relying on these specifics.
+- **Dates/titles — confirmed with Matthew (2026-06-06):** Apple = Creative Pro/Retail 2009–2019, then L&D Producer 2019–present; UW B.A. graduated 2017; gallery role was the Viking Union Gallery at Western Washington University (Bellingham), 2002–2004.
 - **Quantified outcomes** beyond the platform metrics (e.g., engagement, time-to-competency, cost savings) would strengthen the profile considerably if you have them.
 - **A short list of target companies or a desired compensation band**, if you want the AI to answer those questions — currently omitted.
 - **Portfolio links or work samples**, if you'd like to make them available.
