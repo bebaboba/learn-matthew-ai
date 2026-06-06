@@ -16,23 +16,6 @@ export default async function handler(req, res) {
 
   if (!lrsConfigured) return res.status(200).json({ ok: false, reason: 'lrs-not-configured' });
 
-  // Temporary diagnostic: /api/insights?debug=1 shows what the LRS returns.
-  if (req.query && req.query.debug === '1') {
-    const all = await getStatements({ limit: 500 });
-    const mine = all.filter((s) => (s.object?.id || '').includes('/x/'));
-    return res.status(200).json({
-      total: all.length,
-      ours: mine.length,
-      firstFew: all.slice(0, 5).map((s) => ({
-        actor: s.actor?.account?.name,
-        verb: s.verb?.id,
-        object: s.object?.id,
-        stored: s.stored,
-      })),
-      oursSample: mine.slice(0, 5).map((s) => ({ object: s.object?.id, actor: s.actor?.account?.name })),
-    });
-  }
-
   if (cache.data && Date.now() - cache.at < TTL_MS) {
     res.setHeader('Cache-Control', 's-maxage=60');
     return res.status(200).json(cache.data);
