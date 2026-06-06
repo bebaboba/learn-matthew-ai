@@ -1,5 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { readFileSync } from 'node:fs';
+import { buildStatement, sendStatement, topicFor, lrsConfigured } from '../lib/xapi.js';
 
 // Single source of truth for who Matthew is and how the guide should behave.
 // To update what the AI knows, edit api/profile.md — no code changes needed.
@@ -47,10 +48,22 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { messages, persona } = req.body;
+  const { messages, persona, sessionId } = req.body;
 
   if (!PERSONAS[persona]) {
     return res.status(400).json({ error: 'Invalid persona' });
+  }
+
+  // Record the topic of the visitor's question (bucket label only — never the
+  // raw text) to the LRS. Fire concurrently; awaited before the function exits.
+  let trackPromise = Promise.resolve();
+  if (lrsConfigured && Array.isArray(messages)) {
+    const lastUser = [...messages].reverse().find((m) => m.role === 'user');
+    if (lastUser) {
+      trackPromise = sendStatement(
+        buildStatement('ai_topic', topicFor(lastUser.content), sessionId || 'ai-visitor')
+      ).catch(() => {});
+    }
   }
 
   res.setHeader('Content-Type', 'text/event-stream');
@@ -76,9 +89,11 @@ export default async function handler(req, res) {
     }
 
     res.write('data: [DONE]\n\n');
+    await trackPromise;
     res.end();
   } catch (error) {
     res.write(`data: ${JSON.stringify({ error: 'Something went wrong. Try again.' })}\n\n`);
+    await trackPromise;
     res.end();
   }
 }
