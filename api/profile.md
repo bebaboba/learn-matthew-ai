@@ -53,14 +53,21 @@ This is a genuine 0-to-1 platform story, scaled inside one of the largest compan
 
 ## Career arc
 
-Matthew's experience traces a deliberate line from the arts into technology and product:
+Matthew's experience traces a deliberate line from the arts into technology and product. The connecting thread: designing how people learn, understand, and engage — first through physical curation, then through education, now through software at scale.
 
-- **Gallery curation** — Curated exhibitions including *Beyond Borders* at the Viking Union Gallery.
-- **Apple Retail creative education** — Creative Pro at Apple (Bellevue), teaching and developing creative skills.
-- **Starbucks** — Market training leadership.
-- **Apple corporate L&D / product management** — A decade-long arc culminating in building and scaling the internal learning platform described above.
+### Work history
 
-The connecting thread: designing how people learn, understand, and engage — first through physical curation, then through education, now through software at scale.
+**Apple — L&D Producer, Learning Platform** · San Francisco · 2019–present
+Product manager for Apple's internal global learning platform (iOS, macOS, web). Owns roadmap priorities, leads cross-functional delivery with product, engineering, and stakeholders, and translates technical capability into training strategy for a worldwide workforce. Designed and launched onboarding and feature-adoption programs that accelerated employee time-to-productivity across retail and corporate segments; built enablement resources (workshops, self-service guides, video) timed to platform releases; and defined and tracked activation, adoption, and engagement metrics. Architected the function from the ground up in a high-ambiguity environment with no existing playbook.
+
+**Apple — Creative Pro / Senior Retail Specialist** · 2009–2019
+Lead customer educator and product expert at flagship Apple Retail locations, delivering technical and creative training to thousands of customers — from first-time users to creative professionals and high-profile clients — on hardware, software, and creative workflows. Recognized for making complex technical concepts accessible and actionable. Contributed to regional training initiatives and mentored junior team members.
+
+**Starbucks — Store Leader & Market Training Lead** · Seattle · 2004–2009
+As Market Training Lead, designed and delivered multi-unit training programs across a regional portfolio — building curriculum, facilitating workshops, and measuring outcomes against operational KPIs. As Store Leader, owned full P&L and led a team of 25+ across customer-experience and productivity goals.
+
+**University Gallery — Gallery Coordinator** · 2002–2004
+Curated and produced international exhibitions (including *Beyond Borders*); managed stakeholder relationships, public programming, and digital content — an early foundation in audience-centered experience design.
 
 ---
 
@@ -72,6 +79,7 @@ The connecting thread: designing how people learn, understand, and engage — fi
 - **Cross-functional leadership** — driving alignment across many teams in a large org.
 - **Experience & design sensibility** — informed by a curatorial and studio-arts background.
 - **Adjacent fluency** — actively hands-on with developer tooling and AI; built a working interactive learning-platform prototype.
+- **Tools & methods** — data and analytics (SQL, Tableau, Snowflake); instructional-design standards (SCORM, xAPI) and the Kirkpatrick evaluation model; LMS implementation and administration; Adobe Creative Suite, Figma, Miro, Sketch; roadmapping, agile delivery, and change management.
 
 ---
 
@@ -85,9 +93,14 @@ The connecting thread: designing how people learn, understand, and engage — fi
 
 ## Education
 
-- **B.A., Integrated Social Sciences** — University of Washington
-- **Minor:** Art History
-- **Additional coursework:** Mixed Media Studio Arts
+- **B.A., Integrated Social Sciences** — University of Washington. Art History minor; additional coursework in Communications, Computer Science, and Mixed Media Studio Arts.
+- **Fine Art & Design studies** — Western Washington University (1999–2004; no degree earned).
+
+---
+
+## Certifications
+
+- **Kirkpatrick Bronze Level Certification** — Kirkpatrick Partners (2025).
 
 ---
 
@@ -102,7 +115,7 @@ The connecting thread: designing how people learn, understand, and engage — fi
 ## Notes for whoever maintains this file
 
 A few fields you may want to verify or expand before sharing widely:
-- **Job titles and exact dates** for each prior role (Apple, Starbucks, gallery work) — I've described them at the level I'm confident about; add specifics as you see fit.
+- **Dates/titles need confirmation.** Work history was compiled from Matthew's own resumes, which conflict in places: Apple tenure is framed as both ~13 years (Product Owner since 2012) and as Retail 2009–2019 then L&D 2019–present (the version used here); the UW graduation year appears as both 2002 and 2017 (omitted here); and the gallery role's institution is unconfirmed (UW vs. Western Washington / Viking Union Gallery). Confirm before relying on these specifics.
 - **Quantified outcomes** beyond the platform metrics (e.g., engagement, time-to-competency, cost savings) would strengthen the profile considerably if you have them.
 - **A short list of target companies or a desired compensation band**, if you want the AI to answer those questions — currently omitted.
 - **Portfolio links or work samples**, if you'd like to make them available.
