@@ -57,7 +57,7 @@ Matthew's experience traces a deliberate line from the arts into technology and 
 
 ### Work history
 
-**Apple University — L&D Producer, Learning Platform** · San Francisco · 2021–present
+**Apple University — L&D Producer, Learning Platform Product Owner** · San Francisco · 2021–present
 Product manager for Apple's internal global learning platform (iOS, macOS, web). Owns roadmap priorities, leads cross-functional delivery with product, engineering, and stakeholders, and translates technical capability into training strategy for a worldwide workforce. Designed and launched onboarding and feature-adoption programs that accelerated employee time-to-productivity across retail and corporate segments; built enablement resources (workshops, self-service guides, video) timed to platform releases; and defined and tracked activation, adoption, and engagement metrics. Architected the function from the ground up in a high-ambiguity environment with no existing playbook.
 
 **Apple — Creative Pro / Lead Creative** · 2012–2021
@@ -78,7 +78,7 @@ Curated and produced international exhibitions (including *Beyond Borders*); man
 - **Learning & enablement** — instructional design, learning experience, large-scale program rollout.
 - **Cross-functional leadership** — driving alignment across many teams in a large org.
 - **Experience & design sensibility** — informed by a curatorial and studio-arts background.
-- **Adjacent fluency** — actively hands-on with developer tooling and AI; built a working interactive learning-platform prototype.
+- **AI-assisted engineering** — designs and ships real software with LLM tooling: built this portfolio and an LLM-powered web app (React, Vercel serverless functions, xAPI analytics); hands-on with prompt engineering and LLM API integration.
 - **Tools & methods** — data and analytics (SQL, Tableau, Snowflake); instructional-design standards (SCORM, xAPI) and the Kirkpatrick evaluation model; LMS implementation and administration; Adobe Creative Suite, Figma, Miro, Sketch; roadmapping, agile delivery, and change management.
 
 ---
