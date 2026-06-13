@@ -57,13 +57,13 @@ Matthew's experience traces a deliberate line from the arts into technology and 
 
 ### Work history
 
-**Apple — L&D Producer, Learning Platform** · San Francisco · 2019–present
+**Apple University — L&D Producer, Learning Platform** · San Francisco · 2021–present
 Product manager for Apple's internal global learning platform (iOS, macOS, web). Owns roadmap priorities, leads cross-functional delivery with product, engineering, and stakeholders, and translates technical capability into training strategy for a worldwide workforce. Designed and launched onboarding and feature-adoption programs that accelerated employee time-to-productivity across retail and corporate segments; built enablement resources (workshops, self-service guides, video) timed to platform releases; and defined and tracked activation, adoption, and engagement metrics. Architected the function from the ground up in a high-ambiguity environment with no existing playbook.
 
-**Apple — Creative Pro / Senior Retail Specialist** · 2009–2019
+**Apple — Creative Pro / Lead Creative** · 2012–2021
 Lead customer educator and product expert at flagship Apple Retail locations, delivering technical and creative training to thousands of customers — from first-time users to creative professionals and high-profile clients — on hardware, software, and creative workflows. Recognized for making complex technical concepts accessible and actionable. Contributed to regional training initiatives and mentored junior team members.
 
-**Starbucks — Store Leader & Market Training Lead** · Seattle · 2004–2009
+**Starbucks — Store Leader & Market Training Lead** · Seattle · 2004–2012
 As Market Training Lead, designed and delivered multi-unit training programs across a regional portfolio — building curriculum, facilitating workshops, and measuring outcomes against operational KPIs. As Store Leader, owned full P&L and led a team of 25+ across customer-experience and productivity goals.
 
 **Viking Union Gallery, Western Washington University — Gallery Coordinator** · Bellingham, WA · 2002–2004
@@ -93,7 +93,7 @@ Curated and produced international exhibitions (including *Beyond Borders*); man
 
 ## Education
 
-- **B.A., Integrated Social Sciences** — University of Washington (2017). Art History minor; additional coursework in Communications, Computer Science, and Mixed Media Studio Arts.
+- **B.A., Integrated Social Sciences** — University of Washington (2017–2018). Art History minor; additional coursework in Communications, Computer Science, and Mixed Media Studio Arts.
 - **Fine Art & Design studies** — Western Washington University (1999–2004; no degree earned).
 
 ---
@@ -145,7 +145,7 @@ Those aren't handled here — reach out to Matthew at matthewsfo@gmail.com to di
 ## Notes for whoever maintains this file
 
 A few fields you may want to verify or expand before sharing widely:
-- **Dates/titles — confirmed with Matthew (2026-06-06):** Apple = Creative Pro/Retail 2009–2019, then L&D Producer 2019–present; UW B.A. graduated 2017; gallery role was the Viking Union Gallery at Western Washington University (Bellingham), 2002–2004.
+- **Dates/titles — confirmed with Matthew (updated 2026-06-13):** Gallery Coordinator (Viking Union Gallery, WWU, Bellingham) 2002–2004; Starbucks 2004–2012; Apple Creative Pro / Lead Creative (Retail) 2012–2021; Apple University L&D Producer 2021–present; UW B.A. 2017–2018; WWU Fine Art & Design 1999–2004. Kept in sync with the résumé PDF (build_resume.py in the learn-matthew repo).
 - **Quantified outcomes** beyond the platform metrics (e.g., engagement, time-to-competency, cost savings) would strengthen the profile considerably if you have them.
 - **A short list of target companies or a desired compensation band**, if you want the AI to answer those questions — currently omitted.
 - **Portfolio links or work samples**, if you'd like to make them available.
