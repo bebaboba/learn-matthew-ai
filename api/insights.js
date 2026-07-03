@@ -3,7 +3,7 @@ import { getStatements, lrsConfigured } from '../lib/xapi.js';
 // Short-lived in-memory cache (per warm function instance) to avoid hammering
 // the LRS on every page load.
 let cache = { at: 0, data: null };
-const TTL_MS = 60 * 1000;
+const TTL_MS = 10 * 1000;
 
 function cors(res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   if (!lrsConfigured) return res.status(200).json({ ok: false, reason: 'lrs-not-configured' });
 
   if (cache.data && Date.now() - cache.at < TTL_MS) {
-    res.setHeader('Cache-Control', 's-maxage=60');
+    res.setHeader('Cache-Control', 's-maxage=10');
     return res.status(200).json(cache.data);
   }
 
@@ -73,7 +73,7 @@ export default async function handler(req, res) {
     };
 
     cache = { at: Date.now(), data };
-    res.setHeader('Cache-Control', 's-maxage=60');
+    res.setHeader('Cache-Control', 's-maxage=10');
     return res.status(200).json(data);
   } catch {
     return res.status(200).json({ ok: false, reason: 'error' });
