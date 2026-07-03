@@ -74,7 +74,9 @@ export default async function handler(req, res) {
     const r = await fetch(`https://ntfy.sh/${encodeURIComponent(topic)}`, {
       method: 'POST',
       headers: {
-        Title: unanswered.length ? 'learnmatthew.com — last 24h (add to content.md)' : 'learnmatthew.com — last 24h',
+        // HTTP header values must be Latin-1/ByteString — an em dash here throws
+        // ("Cannot convert argument to a ByteString") and silently kills the whole push.
+        Title: unanswered.length ? 'learnmatthew.com - last 24h (add to content.md)' : 'learnmatthew.com - last 24h',
         Tags: unanswered.length ? 'bar_chart,warning' : 'bar_chart',
         Priority: unanswered.length ? 'high' : 'default',
       },
@@ -82,7 +84,8 @@ export default async function handler(req, res) {
     });
 
     return res.status(200).json({ ok: true, sent: r.ok, summary: lines });
-  } catch {
+  } catch (e) {
+    console.error('digest failed:', e);
     return res.status(200).json({ ok: false, reason: 'error' });
   }
 }
