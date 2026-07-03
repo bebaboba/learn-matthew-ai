@@ -44,9 +44,11 @@ export default async function handler(req, res) {
       } else if (oid.includes('/x/project/')) {
         projectsExplored++;
         if (name) projects[name] = (projects[name] || 0) + 1;
-      } else if (oid.includes('/x/ai-experiment/') || oid.includes('/x/ai-topic/')) {
-        if (oid.includes('/x/ai-experiment/')) conversations++;
-        if (oid.includes('/x/ai-topic/') && name) topics[name] = (topics[name] || 0) + 1;
+      } else if (oid.includes('/x/ai-topic/')) {
+        // Each ai-topic statement is a real message sent to the AI guide —
+        // a truer "conversation" signal than a launch click.
+        conversations++;
+        if (name) topics[name] = (topics[name] || 0) + 1;
       } else if (oid.includes('/x/outbound/')) {
         outbound++;
       }

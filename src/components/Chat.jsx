@@ -12,6 +12,23 @@ const PERSONA_LABEL = {
   curious_stranger: 'Curious Stranger',
 };
 
+const SID_KEY = 'lm_sid';
+
+function sessionId() {
+  try {
+    let s = localStorage.getItem(SID_KEY);
+    if (!s) {
+      s = (window.crypto && crypto.randomUUID)
+        ? crypto.randomUUID()
+        : String(Date.now()) + Math.random().toString(36).slice(2);
+      localStorage.setItem(SID_KEY, s);
+    }
+    return s;
+  } catch {
+    return 'anon';
+  }
+}
+
 export default function Chat({ persona, onBack }) {
   const [messages, setMessages] = useState([
     { role: 'assistant', content: OPENING[persona] },
@@ -45,6 +62,7 @@ export default function Chat({ persona, onBack }) {
         body: JSON.stringify({
           messages: nextMessages.map(m => ({ role: m.role, content: m.content })),
           persona,
+          sessionId: sessionId(),
         }),
       });
 
