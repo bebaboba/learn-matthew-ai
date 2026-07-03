@@ -12,6 +12,24 @@ const PERSONA_LABEL = {
   curious_stranger: 'Curious Stranger',
 };
 
+const SUGGESTED_QUESTIONS = {
+  recruiter: [
+    'What roles is Matthew targeting next?',
+    "What's his career arc so far?",
+    'What makes him worth a closer look?',
+  ],
+  hiring_manager: [
+    'Walk me through a project he shipped.',
+    'How does he approach ambiguous problems?',
+    'How would he operate on my team?',
+  ],
+  curious_stranger: [
+    'Tell me about the art world chapter.',
+    "What's he building right now?",
+    'Why San Francisco?',
+  ],
+};
+
 const SID_KEY = 'lm_sid';
 
 function sessionId() {
@@ -29,6 +47,61 @@ function sessionId() {
   }
 }
 
+// Minimal markdown: **bold**, *italic*/_italic_, bullet and numbered lists,
+// paragraphs. Enough for Claude's typical formatting without a dependency.
+function renderInline(text, keyPrefix) {
+  const nodes = [];
+  const re = /\*\*(.+?)\*\*|\*(.+?)\*|_(.+?)_/g;
+  let last = 0, m, i = 0;
+  while ((m = re.exec(text))) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    if (m[1] !== undefined) nodes.push(<strong key={`${keyPrefix}-${i++}`}>{m[1]}</strong>);
+    else nodes.push(<em key={`${keyPrefix}-${i++}`}>{m[2] ?? m[3]}</em>);
+    last = re.lastIndex;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
+}
+
+function renderMarkdown(content) {
+  const blocks = content.split(/\n{2,}/);
+  return blocks.map((block, bi) => {
+    const lines = block.split('\n').filter(l => l.trim() !== '');
+    if (lines.length === 0) return null;
+
+    if (lines.every(l => /^[-*]\s+/.test(l.trim()))) {
+      return (
+        <ul className="msg-list" key={bi}>
+          {lines.map((l, li) => (
+            <li key={li}>{renderInline(l.trim().replace(/^[-*]\s+/, ''), `${bi}-${li}`)}</li>
+          ))}
+        </ul>
+      );
+    }
+
+    if (lines.every(l => /^\d+\.\s+/.test(l.trim()))) {
+      return (
+        <ol className="msg-list" key={bi}>
+          {lines.map((l, li) => (
+            <li key={li}>{renderInline(l.trim().replace(/^\d+\.\s+/, ''), `${bi}-${li}`)}</li>
+          ))}
+        </ol>
+      );
+    }
+
+    return (
+      <p key={bi}>
+        {lines.map((l, li) => (
+          <span key={li}>
+            {renderInline(l, `${bi}-${li}`)}
+            {li < lines.length - 1 ? <br /> : null}
+          </span>
+        ))}
+      </p>
+    );
+  });
+}
+
 export default function Chat({ persona, onBack }) {
   const [messages, setMessages] = useState([
     { role: 'assistant', content: OPENING[persona] },
@@ -42,8 +115,7 @@ export default function Chat({ persona, onBack }) {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-  async function send() {
-    const text = input.trim();
+  async function sendMessage(text) {
     if (!text || isStreaming) return;
 
     const userMessage = { role: 'user', content: text };
@@ -111,9 +183,11 @@ export default function Chat({ persona, onBack }) {
   function handleKey(e) {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
-      send();
+      sendMessage(input.trim());
     }
   }
+
+  const showChips = messages.length === 1 && !isStreaming;
 
   return (
     <div className="chat-wrapper">
@@ -126,15 +200,24 @@ export default function Chat({ persona, onBack }) {
       <div className="messages">
         {messages.map((m, i) => (
           <div key={i} className={`message message--${m.role}`}>
-            {m.role === 'assistant' && <span className="message-sender">Matthew</span>}
+            {m.role === 'assistant' && <span className="message-sender">Guide</span>}
             <div className="message-bubble">
-              {m.content}
+              {m.role === 'assistant' ? renderMarkdown(m.content) : m.content}
               {isStreaming && i === messages.length - 1 && m.role === 'assistant' && (
                 <span className="cursor" />
               )}
             </div>
           </div>
         ))}
+        {showChips && (
+          <div className="suggested-chips">
+            {SUGGESTED_QUESTIONS[persona].map((q) => (
+              <button key={q} className="suggested-chip" onClick={() => sendMessage(q)}>
+                {q}
+              </button>
+            ))}
+          </div>
+        )}
         <div ref={bottomRef} />
       </div>
 
@@ -151,7 +234,7 @@ export default function Chat({ persona, onBack }) {
         />
         <button
           className="send-btn"
-          onClick={send}
+          onClick={() => sendMessage(input.trim())}
           disabled={!input.trim() || isStreaming}
         >
           Send

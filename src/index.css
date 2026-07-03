@@ -208,6 +208,48 @@ body {
   color: #fff;
 }
 
+.message-bubble p + p,
+.message-bubble p + ul,
+.message-bubble p + ol,
+.message-bubble ul + p,
+.message-bubble ol + p {
+  margin-top: 0.7rem;
+}
+
+.message-bubble ul,
+.message-bubble ol {
+  padding-left: 1.25rem;
+}
+
+.message-bubble li + li {
+  margin-top: 0.3rem;
+}
+
+.suggested-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-self: flex-start;
+  max-width: 90%;
+}
+
+.suggested-chip {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.suggested-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .cursor {
   display: inline-block;
   width: 2px;
