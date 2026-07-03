@@ -33,6 +33,17 @@ export default async function handler(req, res) {
     const projects = {};
     const deepDiveProjects = {};
 
+    // Find the most recent reset marker first — the unanswered counter below
+    // only counts questions logged after it (see resolve-unanswered.js).
+    let resetAt = 0;
+    for (const s of statements) {
+      if ((s.object?.id || '').includes('/x/ai-unanswered-reset/')) {
+        const t = Date.parse(s.timestamp || s.stored || '');
+        if (Number.isFinite(t) && t > resetAt) resetAt = t;
+      }
+    }
+
+    let unanswered = 0;
     for (const s of statements) {
       const sid = s.actor?.account?.name;
       if (sid) sessions.add(sid);
@@ -51,6 +62,9 @@ export default async function handler(req, res) {
         if (name) topics[name] = (topics[name] || 0) + 1;
       } else if (oid.includes('/x/outbound/')) {
         outbound++;
+      } else if (oid.includes('/x/ai-unanswered/')) {
+        const t = Date.parse(s.timestamp || s.stored || '');
+        if (Number.isFinite(t) && t > resetAt) unanswered++;
       }
     }
 
@@ -68,6 +82,7 @@ export default async function handler(req, res) {
         conversations,
         outbound,
         deepDives,
+        unanswered,
       },
       topProject: topProjectEntry ? { label: topProjectEntry[0], count: topProjectEntry[1] } : null,
       topTopics,

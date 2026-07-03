@@ -29,6 +29,7 @@ export default async function handler(req, res) {
     let conversations = 0;
     const topics = {};
     const referrers = {};
+    const unanswered = [];
 
     for (const s of recent) {
       const sid = s.actor?.account?.name;
@@ -38,6 +39,10 @@ export default async function handler(req, res) {
       if (oid.includes('/x/project/')) projectsExplored++;
       else if (oid.includes('/x/ai-experiment/')) conversations++;
       else if (oid.includes('/x/ai-topic/') && name) topics[name] = (topics[name] || 0) + 1;
+      else if (oid.includes('/x/ai-unanswered/')) {
+        const question = s.object?.definition?.description?.['en-US'];
+        if (question) unanswered.push(question);
+      }
       const ref = s.context?.extensions?.[REFERRER_EXT];
       if (ref) referrers[ref] = (referrers[ref] || 0) + 1;
     }
@@ -60,13 +65,18 @@ export default async function handler(req, res) {
     if (topTopic) lines.push(`Top topic: ${topTopic}`);
     const topRef = top(referrers);
     if (topRef) lines.push(`Top referrer: ${topRef}`);
+    if (unanswered.length) {
+      lines.push('');
+      lines.push(`${unanswered.length} question${unanswered.length === 1 ? '' : 's'} the AI couldn't answer:`);
+      for (const q of unanswered.slice(0, 10)) lines.push(`• ${q}`);
+    }
 
     const r = await fetch(`https://ntfy.sh/${encodeURIComponent(topic)}`, {
       method: 'POST',
       headers: {
-        Title: 'learnmatthew.com — last 24h',
-        Tags: 'bar_chart',
-        Priority: 'default',
+        Title: unanswered.length ? 'learnmatthew.com — last 24h (add to content.md)' : 'learnmatthew.com — last 24h',
+        Tags: unanswered.length ? 'bar_chart,warning' : 'bar_chart',
+        Priority: unanswered.length ? 'high' : 'default',
       },
       body: lines.join('\n'),
     });
