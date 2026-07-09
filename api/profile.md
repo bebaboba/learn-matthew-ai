@@ -24,7 +24,7 @@ Guidelines:
 | **Name** | Matthew Anderson |
 | **Location** | San Francisco, CA |
 | **Current role** | L&D Producer, Apple (owns content standards, curriculum quality, and the platform for an internal learning ecosystem) |
-| **Targeting** | Head of Content & Curriculum, curriculum leadership, or AI-native education roles |
+| **Targeting** | Learning platform leadership, content & curriculum leadership, or AI-native education roles |
 | **Email** | matthewsfo@gmail.com |
 | **LinkedIn** | linkedin.com/in/picocat |
 | **GitHub** | github.com/bebaboba |
@@ -78,13 +78,13 @@ Curated and produced international exhibitions (including *Beyond Borders*); man
 - **AI-native production** — builds real content and software with Claude: an adaptive tutor and an interactive AI-guided portfolio (this one). Hands-on with the Anthropic API, prompt engineering, and drawing (and continually redrawing) the line between what AI can be trusted with and where human craft stays non-negotiable.
 - **Systems & scale** — distributed authoring, 0-to-1 platform building, production workflow design, self-serve enablement across 145+ teams.
 - **Leadership & measurement** — coaching content creators and instructional designers, direct people management, full P&L ownership, dashboards and adoption analytics, feedback cadence design.
-- **Tools & methods** — data and analytics (SQL, Tableau, Snowflake); SCORM, xAPI, and the Kirkpatrick evaluation model; Adobe Creative Suite, Figma, Miro.
+- **Tools & methods** — data and analytics (SQL, Tableau); SCORM, xAPI, and the Kirkpatrick evaluation model; Adobe Creative Suite, Figma, Miro.
 
 ---
 
 ## What he's looking for
 
-- **Role types:** Head of Content & Curriculum, curriculum leadership, or AI-native education roles.
+- **Role types:** Learning platform leadership, content & curriculum leadership, or AI-native education roles.
 - **Location:** San Francisco / Bay Area tech companies.
 - **Interests:** Companies building content and curriculum that scales with AI without losing its quality bar — especially organizations closing the gap between what AI can do and what people know how to do with it.
 
@@ -119,7 +119,7 @@ Use these as Matthew's own framing — keep the spirit and adapt the wording to 
 It's less a pivot than a through-line. Curation, teaching, and curriculum leadership are the same job from different angles: figuring out how people encounter something unfamiliar and designing the experience so they actually get it. Matthew started by curating exhibitions, moved to teaching creative and technical tools at Apple Retail, then to designing training curriculum, and finally to setting the content quality bar for a platform used by 145+ teams. Each step zoomed out — from one room, to one learner, to an entire organization's worth of content.
 
 **What are you looking for next, and why now?**
-Head of Content & Curriculum, curriculum leadership, or an AI-native education role — ideally at a company where the content needs to scale with AI without losing its quality bar. He's spent years defining what "great" content means precisely enough that a team can hit it without him in the room, and he's energized to bring that discipline somewhere the audience and the models are both moving fast — especially around AI education and developer enablement. For specifics on timing or motivation, connect with him directly.
+Learning platform leadership, content & curriculum leadership, or an AI-native education role — ideally at a company where the content needs to scale with AI without losing its quality bar. He's spent years defining what "great" content means precisely enough that a team can hit it without him in the room, and he's energized to bring that discipline somewhere the audience and the models are both moving fast — especially around AI education and developer enablement. For specifics on timing or motivation, connect with him directly.
 
 **What's your biggest accomplishment?**
 Setting and defending the content quality bar for Apple's internal learning platform, scaled to 145+ teams producing their own learning — through a distributed authoring model, coaching on craft, and a measurement system that proved whether the content actually taught anyone anything. A genuine story of scaling standards and craft, not just headcount, inside one of the largest companies in the world.
