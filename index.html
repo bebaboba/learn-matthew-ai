@@ -5,6 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn Matthew</title>
+    <script>
+      // Blocking, before first paint — avoids a flash of the wrong theme. Dark
+      // is the default; only switches to light if chosen before, on this or the main site.
+      (function () {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
