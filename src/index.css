@@ -1,19 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=IBM+Plex+Sans:wght@400;500&display=swap');
 
+/* Confidence Interval — same system as learnmatthew.com, dark by default.
+   Both modes WCAG AA-verified. Teal/orange are the same hues as the site's
+   illustrations, not new colors. */
 :root {
-  --bg:       #f8f6f2;
-  --surface:  #ffffff;
-  --text:     #1a1a18;
-  --muted:    #6b6b68;
-  --accent:   #C8956C;
-  --accent-light: #f5ead8;
-  --border:   #e5e2db;
+  --bg:       #000000;
+  --surface:  #1E1C19;
+  --text:     #F2EFE9;
+  --muted:    #A39C8E;
+  --accent:   #6fa896;
+  --accent-light: rgba(111,168,150,0.14);
+  --accent2:  #C8956C;
+  --accent2-light: rgba(200,149,108,0.16);
+  --border:   rgba(111,168,150,0.24);
 
-  --serif: 'DM Serif Display', Georgia, serif;
-  --sans:  'DM Sans', system-ui, sans-serif;
+  --serif: 'Archivo', system-ui, sans-serif;
+  --sans:  'IBM Plex Sans', system-ui, sans-serif;
 
   --radius: 12px;
   --transition: 200ms ease;
+}
+
+[data-theme="light"] {
+  --bg:       #FFFFFF;
+  --surface:  #F7F5F0;
+  --text:     #1C1A16;
+  --muted:    #6B6558;
+  --accent:   #49796A;
+  --accent-light: rgba(73,121,106,0.12);
+  --accent2:  #8D5C35;
+  --accent2-light: rgba(141,92,53,0.09);
+  --border:   #E5E1D5;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -29,6 +46,11 @@ body {
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
+  transition: background var(--transition), color var(--transition);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body, .persona-card, .chat-input, .send-btn { transition: none; }
 }
 
 /* ── Persona Picker ───────────────────────────────────── */
@@ -93,7 +115,7 @@ body {
 
 .persona-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--accent) 18%, transparent);
   border-color: var(--accent);
 }
 
@@ -155,8 +177,8 @@ body {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
-  background: var(--accent-light);
+  color: var(--accent2);
+  background: var(--accent2-light);
   padding: 0.25rem 0.6rem;
   border-radius: 20px;
 }
@@ -205,7 +227,7 @@ body {
 
 .message--user .message-bubble {
   background: var(--text);
-  color: #fff;
+  color: var(--bg);
 }
 
 .message-bubble p + p,
@@ -298,7 +320,7 @@ body {
   font-weight: 500;
   padding: 0.7rem 1.4rem;
   background: var(--accent);
-  color: #fff;
+  color: var(--bg);
   border: none;
   border-radius: var(--radius);
   cursor: pointer;
@@ -312,6 +334,31 @@ body {
 }
 
 .send-btn:not(:disabled):hover { opacity: 0.85; }
+
+/* ── Theme toggle ─────────────────────────────────────── */
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 /* ── Mobile ───────────────────────────────────────────── */
 
