@@ -29,9 +29,13 @@ export default async function handler(req, res) {
     let conversations = 0;
     let outbound = 0;
     let deepDives = 0;
+    let totalVisits = 0;
+    let returnVisits = 0;
     const topics = {};
     const projects = {};
     const deepDiveProjects = {};
+    const timeOnPageSecs = [];
+    const scrollMaxBySession = {};
 
     // Find the most recent reset marker first — the unanswered counter below
     // only counts questions logged after it (see resolve-unanswered.js).
@@ -65,6 +69,18 @@ export default async function handler(req, res) {
       } else if (oid.includes('/x/ai-unanswered/')) {
         const t = Date.parse(s.timestamp || s.stored || '');
         if (Number.isFinite(t) && t > resetAt) unanswered++;
+      } else if (oid.includes('/x/session/')) {
+        totalVisits++;
+      } else if (oid.includes('/x/return-visit/')) {
+        returnVisits++;
+      } else if (oid.includes('/x/time-on-page/')) {
+        const m = /^PT(\d+)S$/.exec(s.result?.duration || '');
+        if (m) timeOnPageSecs.push(parseInt(m[1], 10));
+      } else if (oid.includes('/x/scroll-depth/')) {
+        const pct = parseInt(name, 10);
+        if (Number.isFinite(pct) && sid) {
+          scrollMaxBySession[sid] = Math.max(scrollMaxBySession[sid] || 0, pct);
+        }
       }
     }
 
@@ -72,6 +88,11 @@ export default async function handler(req, res) {
     const topTopics = sortDesc(topics).slice(0, 5).map(([label, count]) => ({ label, count }));
     const topDeepDives = sortDesc(deepDiveProjects).slice(0, 5).map(([label, count]) => ({ label, count }));
     const topProjectEntry = sortDesc(projects)[0];
+
+    const avg = (arr) => (arr.length ? Math.round(arr.reduce((a, b) => a + b, 0) / arr.length) : null);
+    const avgTimeOnPageSeconds = avg(timeOnPageSecs);
+    const avgScrollDepth = avg(Object.values(scrollMaxBySession));
+    const returnVisitPct = totalVisits ? Math.round((returnVisits / totalVisits) * 100) : null;
 
     const data = {
       ok: true,
@@ -83,6 +104,9 @@ export default async function handler(req, res) {
         outbound,
         deepDives,
         unanswered,
+        avgTimeOnPageSeconds,
+        avgScrollDepth,
+        returnVisitPct,
       },
       topProject: topProjectEntry ? { label: topProjectEntry[0], count: topProjectEntry[1] } : null,
       topTopics,

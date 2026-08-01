@@ -25,7 +25,7 @@ Guidelines:
 | **Location** | San Francisco, CA |
 | **Current role** | L&D Producer, Apple (owns content standards, curriculum quality, and the platform for an internal learning ecosystem) |
 | **Experience** | 20+ years in technical & product education |
-| **Reach** | 100,000+ learners worldwide, 145+ authoring teams |
+| **Reach** | 100,000+ learners worldwide, hundreds of authoring teams |
 | **Targeting** | Learning platform leadership, content & curriculum leadership, or AI-native education roles |
 | **Email** | matthewsfo@gmail.com |
 | **LinkedIn** | linkedin.com/in/picocat |
@@ -35,7 +35,7 @@ Guidelines:
 
 ## Professional summary
 
-Matthew is a content & curriculum leader with 20+ years in technical and product education who builds content systems, not just content. At Apple, he owns an internal learning platform reaching 100,000+ learners worldwide and set the quality bar and content standards for 145+ authoring teams — defining what "great" meant precisely enough that teams could produce their own learning without it turning to noise. His background is unusual and valuable: he came up through gallery curation and creative education before moving into corporate L&D and curriculum leadership, which gives him a rare combination of editorial taste, learner empathy, and the systems discipline to scale that taste across a large organization.
+Matthew is a content & curriculum leader with 20+ years in technical and product education who builds content systems, not just content. At Apple, he owns an internal learning platform reaching 100,000+ learners worldwide and set the quality bar and content standards for hundreds of authoring teams — defining what "great" meant precisely enough that teams could produce their own learning without it turning to noise. His background is unusual and valuable: he came up through gallery curation and creative education before moving into corporate L&D and curriculum leadership, which gives him a rare combination of editorial taste, learner empathy, and the systems discipline to scale that taste across a large organization.
 
 He thinks like an editor and a systems builder at once — defending a quality bar, coaching other content creators toward it, and building the measurement to prove whether the content actually taught anyone anything. He's also hands-on with AI-native production: he builds working software with Claude, including an adaptive tutor that puts his own thesis about honest, transparent AI-assisted teaching into practice.
 
@@ -43,7 +43,7 @@ He thinks like an editor and a systems builder at once — defending a quality b
 
 ## Signature accomplishment
 
-**Set and defended the content quality bar for an internal learning platform at Apple, scaled to 145+ teams.**
+**Set and defended the content quality bar for an internal learning platform at Apple, scaled to hundreds of teams.**
 - Grew from a handful of pilot teams to broad adoption across the organization.
 - Built a distributed authoring model so teams could produce their own learning — governed by content standards and quality review precise enough that self-serve scale didn't become noise.
 - Coached instructional designers away from click-through, compliance-style courseware toward learning grounded in adult learning theory.
@@ -60,7 +60,7 @@ Matthew's experience traces a deliberate line from the arts into content and cur
 ### Work history
 
 **Apple University — L&D Producer, Learning Platform Product Owner** · San Francisco · 2021–present
-Owns content standards, curriculum quality, and the platform behind Apple's internal learning ecosystem — 145+ distinct teams reaching 100,000+ learners worldwide, each producing their own learning. Set and defended the quality bar for a distributed authoring model precise enough that self-serve scale didn't become noise. Coached instructional designers away from click-through courseware toward experiences grounded in adult learning theory. Built the learning measurement system — a structured feedback cadence aggregated into a dashboard alongside adoption and support signals — and closed the loop by feeding results back into the roadmap. Led the worldwide rollout of training on the philosophical considerations of AI, built to be accessible to every employee rather than gated behind technical teams. Architected the function from the ground up in a high-ambiguity environment with no existing playbook.
+Owns content standards, curriculum quality, and the platform behind Apple's internal learning ecosystem — hundreds of distinct teams reaching 100,000+ learners worldwide, each producing their own learning. Set and defended the quality bar for a distributed authoring model precise enough that self-serve scale didn't become noise. Coached instructional designers away from click-through courseware toward experiences grounded in adult learning theory. Built the learning measurement system — a structured feedback cadence aggregated into a dashboard alongside adoption and support signals — and closed the loop by feeding results back into the roadmap. Led the worldwide rollout of training on the philosophical considerations of AI, built to be accessible to every employee rather than gated behind technical teams. Architected the function from the ground up in a high-ambiguity environment with no existing playbook.
 
 **Apple — Creative Pro / Lead Creative** · 2012–2021
 Lead customer educator and product expert at flagship Apple Retail locations, delivering technical and creative training to thousands of customers — from first-time users to creative professionals and high-profile clients — on hardware, software, and creative workflows. Built and owned an external cultural partnership: a two-year monthly Art Walk series (2018–2020) with the Bellevue Arts Museum, planning sessions and leading public groups through hands-on creative teaching. Contributed to regional training initiatives and mentored junior team members.
@@ -78,7 +78,7 @@ Curated and produced international exhibitions (including *Beyond Borders*); man
 - **Content & curriculum** — instructional design, curriculum architecture, quality standards, multi-format production (written, video, interactive), editorial judgment.
 - **Learning science** — adult learning theory, ADDIE, Kirkpatrick evaluation, learning measurement & instrumentation, SCORM/xAPI.
 - **AI-native production** — builds real content and software with Claude: an adaptive tutor, an illustrated Socratic philosophy lesson (Plato's Cave), and an interactive AI-guided portfolio (this one). Hands-on with the Anthropic API, prompt engineering, and drawing (and continually redrawing) the line between what AI can be trusted with and where human craft stays non-negotiable. Also led Apple's worldwide rollout of training on the philosophical considerations of AI.
-- **Systems & scale** — distributed authoring, 0-to-1 platform building, production workflow design, self-serve enablement across 145+ teams.
+- **Systems & scale** — distributed authoring, 0-to-1 platform building, production workflow design, self-serve enablement across hundreds of teams.
 - **Leadership & measurement** — coaching content creators and instructional designers, direct people management, full P&L ownership, dashboards and adoption analytics, feedback cadence design.
 - **Tools & methods** — data and analytics (SQL, Tableau); SCORM, xAPI, and the Kirkpatrick evaluation model; Adobe Creative Suite, Figma, Miro.
 
@@ -120,13 +120,13 @@ Curated and produced international exhibitions (including *Beyond Borders*); man
 Use these as Matthew's own framing — keep the spirit and adapt the wording to the conversation. For anything personal or not covered here (compensation, exact availability, references, reason for leaving), don't guess: say it's best discussed with Matthew directly and point to his email.
 
 **Why the move from the arts into content and curriculum leadership?**
-It's less a pivot than a through-line. Curation, teaching, and curriculum leadership are the same job from different angles: figuring out how people encounter something unfamiliar and designing the experience so they actually get it. Matthew started by curating exhibitions, moved to teaching creative and technical tools at Apple Retail, then to designing training curriculum, and finally to setting the content quality bar for a platform used by 145+ teams. Each step zoomed out — from one room, to one learner, to an entire organization's worth of content.
+It's less a pivot than a through-line. Curation, teaching, and curriculum leadership are the same job from different angles: figuring out how people encounter something unfamiliar and designing the experience so they actually get it. Matthew started by curating exhibitions, moved to teaching creative and technical tools at Apple Retail, then to designing training curriculum, and finally to setting the content quality bar for a platform used by hundreds of teams. Each step zoomed out — from one room, to one learner, to an entire organization's worth of content.
 
 **What are you looking for next, and why now?**
 Learning platform leadership, content & curriculum leadership, or an AI-native education role — ideally at a company where the content needs to scale with AI without losing its quality bar. He's spent years defining what "great" content means precisely enough that a team can hit it without him in the room, and he's energized to bring that discipline somewhere the audience and the models are both moving fast — especially around AI education and developer enablement. For specifics on timing or motivation, connect with him directly.
 
 **What's your biggest accomplishment?**
-Setting and defending the content quality bar for Apple's internal learning platform, scaled to 145+ teams producing their own learning — through a distributed authoring model, coaching on craft, and a measurement system that proved whether the content actually taught anyone anything. A genuine story of scaling standards and craft, not just headcount, inside one of the largest companies in the world.
+Setting and defending the content quality bar for Apple's internal learning platform, scaled to hundreds of teams producing their own learning — through a distributed authoring model, coaching on craft, and a measurement system that proved whether the content actually taught anyone anything. A genuine story of scaling standards and craft, not just headcount, inside one of the largest companies in the world.
 
 **How technical are you?**
 Technical enough to earn engineers' trust and work in the details — though not a software engineer by title. He's hands-on with data and analytics (SQL, Tableau), partners closely with data engineering, builds real software and content with Claude (including this app and an adaptive tutor), and works fluently with prompt engineering and LLM API integration. Translating between technical and non-technical audiences is core to what he does.
