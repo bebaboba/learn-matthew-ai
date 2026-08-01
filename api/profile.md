@@ -86,8 +86,9 @@ Curated and produced international exhibitions (including *Beyond Borders*); man
 
 ## What he's looking for
 
-- **Role types:** Learning platform leadership, content & curriculum leadership, or AI-native education roles.
-- **Location:** San Francisco / Bay Area tech companies.
+- **Role types:** Learning platform leadership, content & curriculum leadership, or AI-native education roles. Also open to a **Product Manager / Platform PM pivot** (added 2026-07-27) — his Apple title already carries "Learning Platform Product Owner," and roles like Senior/Staff Product Manager at ed-tech, HR-tech, or L&D-tech platform companies (e.g. Docebo, Degreed, Culture Amp, Lattice) would widen his search into a genuinely different job market. Note: his materials don't yet use standard PM vocabulary (roadmaps, OKRs, sprints, PRDs, A/B testing) — when framing him for a PM-titled role, translate his real scope into that language honestly rather than inventing ceremonies or scope he didn't have.
+  **Broadened further 2026-07-30**: cast a wider net specifically across ed-tech companies — for both the primary curriculum/content-leadership track and the PM-pivot lane — beyond the initial narrow set (Docebo, Degreed). Add to the standing search list: Coursera, Duolingo, Khan Academy, Instructure/Canvas, 2U/edX, Udemy, Skillsoft, Cornerstone OnDemand, D2L (Desire2Learn), Guild Education, LinkedIn Learning, General Assembly, Codecademy, Newsela, ClassDojo, and similar ed-tech platforms. Same seniority floor (senior/staff/lead/director, not junior/associate IC) and comp floor (~$180K+ base where disclosed, noted-not-discarded if slightly lower but an unusually strong fit) apply to this expanded ed-tech set as to the HR-tech PM lane. Still weight SF/Bay Area-headquartered companies above fully-remote-native ones per the location goal below.
+- **Location:** San Francisco / Bay Area tech companies. As of 2026-07-27, Matthew's explicit goal is to land a job **in San Francisco specifically, by the end of 2026** — so SF/Bay Area-headquartered companies (even ones offering remote flexibility) should be weighted above fully-remote-native companies with no SF presence, and postings should be evaluated with real time urgency (roughly 5 months from 2026-07-27) rather than treated as open-ended searching.
 - **Interests:** Companies building content and curriculum that scales with AI without losing its quality bar — especially organizations closing the gap between what AI can do and what people know how to do with it.
 
 ---
@@ -141,6 +142,9 @@ San Francisco, focused on Bay Area tech. For remote arrangements or relocation s
 
 **What about compensation and availability?**
 Those aren't handled here — reach out to Matthew at matthewsfo@gmail.com to discuss compensation, timing, and availability.
+
+**Are you authorized to work in the US? Do you require visa sponsorship?**
+Yes, authorized to work in the US. No, does not require visa sponsorship now or in the future. Confirmed by Matthew 2026-07-24 (Anthropic application) and reconfirmed 2026-07-27 (Pluralsight application) — use these as the standing answers for these two questions on any future US-based application unless Matthew says otherwise.
 
 ---
 
